@@ -10,7 +10,6 @@ public class AwsSesConfig {
     @Bean
     public AmazonSimpleEmailService amazonSimpleEmailService() {
         return AmazonSimpleEmailServiceClientBuilder.standard()
-                .withRegion("us-east-1")
                 .build();
     }
 }
